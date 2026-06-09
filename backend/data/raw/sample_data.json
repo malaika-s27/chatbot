@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What are the ticket prices for Karachi to Lahore?",
+    "answer": "The ticket prices for Karachi to Lahore vary by class: Economy class costs approximately PKR 1,500, AC Standard costs around PKR 3,000, AC Business costs about PKR 5,000, and AC Sleeper costs approximately PKR 7,000. Prices may vary based on train type and season.",
+    "source": "Pakistan Railway Fare Chart"
+  },
+  {
+    "question": "How can I book train tickets online?",
+    "answer": "You can book train tickets online through the Pakistan Railway website (pakrail.gov.pk) or mobile app. You need to create an account, select your origin and destination stations, choose travel date and train, select class, provide passenger details, and pay via credit/debit card or mobile banking.",
+    "source": "Pakistan Railway Booking Guide"
+  },
+  {
+    "question": "What documents are required for train travel?",
+    "answer": "For train travel within Pakistan, you need a valid CNIC (Computerized National Identity Card) for Pakistani citizens. For foreign nationals, a valid passport is required. Students should carry student ID cards for concessions. Keep your ticket and ID handy during the journey.",
+    "source": "Pakistan Railway Travel Guidelines"
+  },
+  {
+    "question": "What is the baggage allowance on Pakistan Railway trains?",
+    "answer": "Each passenger is allowed free baggage allowance of 50kg for AC classes and 35kg for Economy class. Excess baggage is charged at PKR 10 per kg. Hand baggage should not exceed 15kg and must fit in overhead compartments or under seats.",
+    "source": "Pakistan Railway Baggage Policy"
+  },
+  {
+    "question": "Are there special discounts for students?",
+    "answer": "Yes, Pakistan Railway offers 50% discount for students in Economy class on all trains. Students must carry valid student ID cards from recognized educational institutions. The discount is not applicable for AC classes.",
+    "source": "Pakistan Railway Concession Policy"
+  },
+  {
+    "question": "What facilities are available at major railway stations?",
+    "answer": "Major railway stations like Karachi Cantt, Lahore Junction, and Islamabad Railway Station offer waiting rooms, refreshment rooms, bookstalls, prayer areas, wheelchair accessibility, parking facilities, and inquiry counters. Some stations also have ATMs and currency exchange services.",
+    "source": "Pakistan Railway Station Facilities"
+  },
+  {
+    "question": "How can I track my train status?",
+    "answer": "You can track train status through the Pakistan Railway website, mobile app, or by calling the helpline 117. You can also check the display boards at stations. Real-time tracking information includes current location, expected arrival time, and any delays.",
+    "source": "Pakistan Railway Tracking Services"
+  },
+  {
+    "question": "What is the refund policy for cancelled tickets?",
+    "answer": "For cancelled tickets, refund policy varies: Full refund if cancelled 48 hours before departure, 50% refund if cancelled 24-48 hours before, 25% refund if cancelled less than 24 hours before. No refund for no-show. A processing fee of PKR 100 is deducted from all refunds.",
+    "source": "Pakistan Railway Refund Policy"
+  }
+]

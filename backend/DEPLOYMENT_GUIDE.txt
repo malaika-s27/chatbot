@@ -1,0 +1,84 @@
+# Pakistan Railway RAG Chatbot - Deployment Guide
+# Complete Setup Commands (Execute in Order)
+
+## 1. Setup Virtual Environment
+cd "d:\Work\Chat Bot Clade\Chat Bot 117"
+.venv\Scripts\activate
+
+## 2. Install Dependencies (if not already installed)
+pip install fastapi uvicorn python-dotenv pinecone-client groq pydantic python-multipart numpy pandas tqdm sentence-transformers torch scikit-learn
+
+## 3. Process Data and Generate Embeddings
+python scripts/process_data_simple.py
+
+## 4. Upload Embeddings to Pinecone
+python scripts/upload_to_pinecone_simple.py
+
+## 5. Start RAG Server
+uvicorn rag_server:app --host 0.0.0.0 --port 8003
+
+## Alternative: Start with Python (for debugging)
+python rag_server.py
+
+## API Endpoints (for frontend integration)
+POST http://localhost:8003/chat/ask
+GET  http://localhost:8003/health
+GET  http://localhost:8003/stats
+GET  http://localhost:8003/
+
+## Request Format for /chat/ask
+{
+  "question": "Your question here",
+  "session_id": "optional_session_id"
+}
+
+## Response Format
+{
+  "answer": "AI-generated response",
+  "sources": ["Pakistan Railway FAQ"],
+  "session_id": "session_xxx",
+  "confidence": 0.85
+}
+
+## Environment Variables (.env file)
+PINECONE_API_KEY=your_pinecone_api_key_here
+PINECONE_INDEX_NAME=railway-chatbot
+PINECONE_DIMENSION=384
+GROQ_API_KEY=your_groq_api_key_here
+GROQ_MODEL=llama-3.1-8b-instant
+EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
+
+## Files Structure
+backend/
+├── rag_server.py                 # Main RAG FastAPI server
+├── scripts/
+│   ├── process_data_simple.py   # Data processing and embeddings
+│   └── upload_to_pinecone_simple.py  # Upload to Pinecone
+├── data/
+│   ├── raw/
+│   │   ├── data.txt           # Original FAQ data
+│   │   └── structured_data.json # Processed Q&A pairs
+│   └── processed/
+│       └── processed_data.json  # Data with embeddings
+├── .env                        # Environment variables
+
+## Quick Restart Commands (After PC Shutdown)
+# 1. Activate virtual environment
+cd "d:\Work\Chat Bot Clade\Chat Bot 117"
+.venv\Scripts\activate
+
+# 2. Start RAG server
+cd "d:\Work\Chat Bot Clade\Chat Bot 117\backend"
+uvicorn rag_server:app --host 0.0.0.0 --port 8003
+
+## Testing the API
+# Test health endpoint
+curl http://localhost:8003/health
+
+# Test chat endpoint
+Invoke-RestMethod -Uri "http://localhost:8003/chat/ask" -Method POST -ContentType "application/json" -Body '{"question":"What is the train schedule?"}'
+
+## Troubleshooting
+# If Groq API error: Check GROQ_MODEL in .env file
+# If Pinecone error: Check PINECONE_API_KEY and PINECONE_INDEX_NAME
+# If embeddings error: Check sentence-transformers installation

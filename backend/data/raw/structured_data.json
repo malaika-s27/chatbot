@@ -1,0 +1,272 @@
+[
+  {
+    "question": "What is the departure or arrival time of a specific train?",
+    "answer": "See Rabta app for this or visit Pakistan railways website (https://www.pakrailways.gov.pk/train)",
+    "source": "Pakistan Railways Helpline 117 FAQs",
+    "category": "Train Schedule"
+  },
+  {
+    "question": "Is a seat available for a certain train and date?",
+    "answer": "See Rabta app for this.",
+    "source": "Pakistan Railways Helpline 117 FAQs",
+    "category": "Ticket Availability"
+  },
+  {
+    "question": "How can I book a train ticket online or from station?",
+    "answer": "Each and every step to book train ticket from Rabta app. Easy paisa and jazz cash only/ jazz cash card.",
+    "source": "Pakistan Railways Helpline 117 FAQs",
+    "category": "Ticket Booking"
+  },
+  {
+    "question": "How can I cancel my ticket and request a refund?",
+    "answer": "See Rabta app for online ticket, and manual reservation office for paper ticket.",
+    "source": "Pakistan Railways Helpline 117 FAQs",
+    "category": "Ticket Cancellation"
+  },
+  {
+    "question": "Is my train delayed and what is the expected arrival time?",
+    "answer": "Call 117",
+    "source": "Pakistan Railways Helpline 117 FAQs",
+    "category": "Train Delay"
+  },
+  {
+    "question": "What is the ticket price between two cities?",
+    "answer": "See Rabta app for this",
+    "source": "Pakistan Railways Helpline 117 FAQs",
+    "category": "Fare Inquiry"
+  },
+  {
+    "question": "How can I register a complaint regarding staff or service?",
+    "answer": "Call 117",
+    "source": "Pakistan Railways Helpline 117 FAQs",
+    "category": "Complaint Registration"
+  },
+  {
+    "question": "What should I do if I have complaints about seat availability while travelling?",
+    "answer": "Consult with train guard.",
+    "source": "Pakistan Railways Helpline 117 FAQs",
+    "category": "Complaint Registration"
+  },
+  {
+    "question": "What should I do if I lost my luggage on train or station?",
+    "answer": "Consult Nearest station /Calling at 15 Police Helpline",
+    "source": "Pakistan Railways Helpline 117 FAQs",
+    "category": "Lost & Found"
+  },
+  {
+    "question": "How can I send goods through railway cargo service?",
+    "answer": "Call 1217 ptcl inquiry no",
+    "source": "Pakistan Railways Helpline 117 FAQs",
+    "category": "Cargo/Freight"
+  },
+  {
+    "question": "Are waiting rooms, parking or food facilities available at station?",
+    "answer": "Yes paid (VIP) and unpaid (general) both available. Food facility on cash",
+    "source": "Pakistan Railways Helpline 117 FAQs",
+    "category": "Station Facilities"
+  },
+  {
+    "question": "Does a train operate between two specific cities?",
+    "answer": "See Rabta app for this.",
+    "source": "Pakistan Railways Helpline 117 FAQs",
+    "category": "Train Routes"
+  },
+  {
+    "question": "How can I confirm if my online ticket is valid or confirmed?",
+    "answer": "Call 117",
+    "source": "Pakistan Railways Helpline 117 FAQs",
+    "category": "E-Ticket Verification"
+  },
+  {
+    "question": "Sometimes OTP verification code is not received during new account registration, and in some cases it is also not received during account recovery?",
+    "answer": "Call 117",
+    "source": "Pakistan Railways Helpline 117 FAQs",
+    "category": "Account Issues"
+  },
+  {
+    "question": "How to recover Rabta Account?",
+    "answer": "CNIC, phone no, email address required. If not further call 117",
+    "source": "Pakistan Railways Helpline 117 FAQs",
+    "category": "Account Recovery"
+  },
+  {
+    "question": "I booked tickets through Raabta, but transaction failed mis-transaction. How long will it take for amount to be refunded?",
+    "answer": "Within 7 working days. Additionally, refund will be credited back to the original payment account, not to the account linked with Raabta.",
+    "source": "Pakistan Railways Helpline 117 FAQs",
+    "category": "Transaction Issues"
+  },
+  {
+    "question": "Are there old age or disability discounts?",
+    "answer": "Go to Pakrailgov.pk and download old age form/disability form. Attach 1 copy of CNIC and 1 passport size photographs to each copy of form. 1 copy to be submitted to nearest ticket reservation office, signed by station master. 1 copy of application send to CCM (chief commercial manager) by post (address: CCM office, IT Directorate, Empress Road Lahore).",
+    "source": "Pakistan Railways Helpline 117 FAQs",
+    "category": "Discounts"
+  },
+  {
+    "question": "How to book with military vouchers?",
+    "answer": "Booking through reservation office. Person must carry military discount voucher with him.",
+    "source": "Pakistan Railways Helpline 117 FAQs",
+    "category": "Military Discounts"
+  },
+  {
+    "question": "What are the reservation office timings?",
+    "answer": "09:00 to 20:00 main stations, for small stations: 09:00 - 17:00 hrs",
+    "source": "Pakistan Railways Helpline 117 FAQs",
+    "category": "Office Timings"
+  },
+  {
+    "question": "What are the freight rates?",
+    "answer": "Visit Pakistan railways website (https://www.pakrail.gov.pk/FreightRates.aspx)",
+    "source": "Pakistan Railways Helpline 117 FAQs",
+    "category": "Freight Rates"
+  },
+  {
+    "question": "Can I book a ticket from anywhere?",
+    "answer": "Berths/Seats can be reserved from Railway Reservation Offices, PRACS Reservation Offices and on line E-ticketing (SEE RABTA APP FOR THIS) mobile app.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Ticket Booking"
+  },
+  {
+    "question": "How many days in advance can I reserve my ticket?",
+    "answer": "Seats/Berths can be got reserved maximum up to 90 days in advance.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Ticket Booking"
+  },
+  {
+    "question": "How do I know the reservation status of my ticket?",
+    "answer": "From Reservation Offices on a telephone, on personal visit or Pakistan railways helpline or from your account dashboard before departure of train.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Reservation Status"
+  },
+  {
+    "question": "What are the facilities for computerized reservation?",
+    "answer": "Computerized reservation facilities are provided at online E-ticketing mobile app SEE RABTA APP FOR THIS and all main Railway reservation offices.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Reservation Facilities"
+  },
+  {
+    "question": "How do I find out the current status of my unconfirmed ticket?",
+    "answer": "By visiting Reservation Office or contacting Train Guard before train departure and Pakistan railways helpline",
+    "source": "Pakistan Railways FAQs",
+    "category": "Ticket Status"
+  },
+  {
+    "question": "Do I need to pay to use VIP waiting room at a station?",
+    "answer": "Yes Rs 300/- Each person.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Station Facilities"
+  },
+  {
+    "question": "Are there car parking facilities at stations?",
+    "answer": "Yes. But Car Parking fee is charged.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Station Facilities"
+  },
+  {
+    "question": "Is there any transit accommodation available at stations?",
+    "answer": "At big stations, retiring rooms are available on payment.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Station Facilities"
+  },
+  {
+    "question": "Should I have to book in advance?",
+    "answer": "Yes. But subject to availability.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Ticket Booking"
+  },
+  {
+    "question": "Whom should I complain to in case of overcharging or other complaints?",
+    "answer": "Reservation office in charge Divisional Commercial Officer; Concerned Division on telephone number given in Railway Time Table.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Complaints"
+  },
+  {
+    "question": "Whom should I contact in case of sub-standard food provided by dining cars?",
+    "answer": "In charge Guard may be contacted and complaint may be registered in Complaint Book provided to him or matter may be brought into the notice of Incharge Divisional Commercial Officer.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Complaints"
+  },
+  {
+    "question": "Whom should I contact in case of complaint against coolies?",
+    "answer": "You may contact Station Manager Incharge or Conductor Guard or Divisional Commercial Officer concerned.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Complaints"
+  },
+  {
+    "question": "Are there any facilities for registering complaints and their prompt reply?",
+    "answer": "Printed Complaint Book is available with all Station Masters / Guards.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Complaints"
+  },
+  {
+    "question": "Is there any other accommodation available besides retiring rooms?",
+    "answer": "No.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Station Facilities"
+  },
+  {
+    "question": "Do the railways have hotels at important tourist spots?",
+    "answer": "No.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Station Facilities"
+  },
+  {
+    "question": "If I have any suggestions or complaints about the catering facilities or other passenger amenities, whom shall I contact?",
+    "answer": "Train Guard, Station Master, or Divisional Commercial Officer.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Complaints"
+  },
+  {
+    "question": "Whom should I approach in case of any emergency at stations?",
+    "answer": "All Divisional Commercial Officers, concerned Station Masters, or Police Help Centre.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Emergency"
+  },
+  {
+    "question": "What are weightage of free allowance as luggage in different classes?",
+    "answer": "Air-Conditioned (Sleeper) Class: 50 Kilograms, Air-Conditioned Sitter: 20 Kilograms, First Class Sleeper: 20 Kilograms, Air-Conditioned Lower: 20 Kilograms, Economy Class: 20 Kilograms, Second Class: 20 Kilograms.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Luggage Allowance"
+  },
+  {
+    "question": "Can I book my tickets through travel agents?",
+    "answer": "Not allowed.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Ticket Booking"
+  },
+  {
+    "question": "What facilities are available for international tourists?",
+    "answer": "They are provided 25% concession in rail fares for all classes.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Tourist Facilities"
+  },
+  {
+    "question": "Can I break my journey at any intermediate station?",
+    "answer": "No break journey is allowed after 240 KMs with in 24 hours.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Journey Rules"
+  },
+  {
+    "question": "Can I extend my journey beyond the original destination?",
+    "answer": "Yes subject to availability of accommodation.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Journey Rules"
+  },
+  {
+    "question": "Can I upgrade my ticket to a higher class en route?",
+    "answer": "Yes. On payment of extra charges if accommodation is available.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Journey Rules"
+  },
+  {
+    "question": "Can my confirmed tickets be transferred to somebody else?",
+    "answer": "Tickets are not transferable.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Journey Rules"
+  },
+  {
+    "question": "What are different concessions provided to railway passengers?",
+    "answer": "Blind Persons 50%, Blind Students 50%, Local Students 50%, Foreign Students 25%, Tourists 50%, Scouts Girls Guides 40%, Sports Athletes 40%, Mentally Orthopedically handicapped Athletes 50%, Members of Chartered Institute of Transport Pakistan Centre 25% and 50%, Senior citizens 50%, 50% ticket discount for spouses (husband or wife) of journalists.",
+    "source": "Pakistan Railways FAQs",
+    "category": "Concessions"
+  }
+]
