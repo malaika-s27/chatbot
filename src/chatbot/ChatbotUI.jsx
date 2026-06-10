@@ -2,14 +2,14 @@ import React, { useEffect } from "react";
 import { MAIN_MENU } from "./chatbotData";
 import ScrollToBottom from "./ScrollToBottom";
 import "./chatbot.css";
-import { useChatbot } from "./useChatbot";
 
-const pakistanRailwaysLogo = `${import.meta.env.BASE_URL}pak-railways-logo.ico`;
-
+// ─────────────────────────────────────────────
+//  HELPLINE CARD  (shown when msg.helpline = true)
+// ─────────────────────────────────────────────
 export function HelplineCard() {
   return (
     <div className="pr-helpline-card mt-2">
-      <div className="fw-bold mb-1">Pakistan Railways Helpline</div>
+      <div className="fw-bold mb-1">📞 Pakistan Railways Helpline</div>
       <div>
         Call: <a href="tel:117">117</a> (UAN)
       </div>
@@ -23,6 +23,9 @@ export function HelplineCard() {
   );
 }
 
+// ─────────────────────────────────────────────
+//  TYPING INDICATOR
+// ─────────────────────────────────────────────
 export function TypingBubble() {
   return (
     <div className="pr-bubble pr-bubble--bot">
@@ -35,6 +38,9 @@ export function TypingBubble() {
   );
 }
 
+// ─────────────────────────────────────────────
+//  SINGLE MESSAGE ROW
+// ─────────────────────────────────────────────
 export function Message({
   msg,
   onMenuClick,
@@ -50,6 +56,7 @@ export function Message({
 
   return (
     <div className="pr-bot-row">
+      {/* Text bubble */}
       <div
         className="pr-bubble pr-bubble--bot"
         style={{ whiteSpace: "pre-line" }}
@@ -57,6 +64,7 @@ export function Message({
         {msg.text}
       </div>
 
+      {/* RAG Response Indicators */}
       {msg.sources && msg.sources.length > 0 && (
         <div className="pr-sources mt-1">
           <small className="text-muted">
@@ -65,16 +73,19 @@ export function Message({
         </div>
       )}
 
+      {/* Optional helpline card */}
       {msg.helpline && <HelplineCard />}
 
+      {/* Optional back button */}
       {msg.backButton && (
         <div className="pr-quick-replies mt-2">
           <button className="pr-qr-btn pr-qr-btn--back" onClick={onBack}>
-            Back to Main Menu
+            ← Back to Main Menu
           </button>
         </div>
       )}
 
+      {/* Main menu grid */}
       {msg.menu && (
         <div className="pr-menu-grid mt-2">
           {MAIN_MENU.map((m) => (
@@ -93,6 +104,7 @@ export function Message({
         </div>
       )}
 
+      {/* Submenu quick-reply buttons */}
       {msg.submenu && (
         <div className="pr-quick-replies mt-2">
           {msg.submenu.map((s) => (
@@ -110,6 +122,7 @@ export function Message({
         </div>
       )}
 
+      {/* Main menu button for responses */}
       {msg.showMainMenuButton && (
         <div className="pr-quick-replies mt-2">
           <button
@@ -120,13 +133,29 @@ export function Message({
           </button>
         </div>
       )}
+
+      {/* {msg.followUp && (
+        <div className="pr-quick-replies mt-2">
+          {msg.followUp.map((btn) => (
+            <button
+              key={btn.id}
+              className="pr-qr-btn"
+              onClick={() => onSubClick(btn.id, btn.label)}
+            >
+              {btn.label}
+            </button>
+          ))}
+        </div>
+      )} */}
     </div>
   );
 }
 
+// ─────────────────────────────────────────────
+//  CHAT WINDOW
+// ─────────────────────────────────────────────
 export function ChatWindow({
   open,
-  embedded = false,
   messages,
   input,
   bodyRef,
@@ -142,16 +171,20 @@ export function ChatWindow({
   scrollToBottom,
 }) {
   return (
-    <div
-      className={`pr-chat-window ${embedded ? "pr-chat-window--embedded" : ""} ${
-        open ? "" : "pr-chat-window--hidden"
-      }`}
-    >
-      <div className="pr-chat-shell">
+    <div className={`pr-chat-window ${open ? "" : "pr-chat-window--hidden"}`}>
+      <div
+        style={{
+          position: "relative",
+          height: "100%",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        {/* Header */}
         <div className="pr-chat-header">
-          <div className="pr-chat-header__avatar">
-            <img src={pakistanRailwaysLogo} alt="Pakistan Railways" />
-          </div>
+          <div
+            className="pr-chat-header__avatar"
+          ></div>
           <div className="pr-chat-header__info">
             <h6>Pakistan Railways</h6>
             <span>
@@ -159,18 +192,17 @@ export function ChatWindow({
               RAHI 117
             </span>
           </div>
-          {!embedded && (
-            <button
-              className="pr-minimize-btn ms-auto"
-              onClick={onClose}
-              title="Minimize"
-              aria-label="Close chat"
-            >
-              -
-            </button>
-          )}
+          <button
+            className="pr-minimize-btn ms-auto"
+            onClick={onClose}
+            title="Minimize"
+            aria-label="Close chat"
+          >
+            −
+          </button>
         </div>
 
+        {/* Messages */}
         <div className="pr-chat-body" ref={bodyRef}>
           {messages.map((msg, i) => (
             <Message
@@ -184,6 +216,7 @@ export function ChatWindow({
           ))}
         </div>
 
+        {/* Input */}
         <div className="pr-chat-footer">
           <input
             type="text"
@@ -209,6 +242,9 @@ export function ChatWindow({
   );
 }
 
+// ─────────────────────────────────────────────
+//  FAB  (floating action button)
+// ─────────────────────────────────────────────
 export function ChatFAB({ open, onClick }) {
   return (
     <button
@@ -230,7 +266,12 @@ export function ChatFAB({ open, onClick }) {
   );
 }
 
-export default function Chatbot({ embedded = false }) {
+// ─────────────────────────────────────────────
+//  ROOT CHATBOT COMPONENT  (compose everything)
+// ─────────────────────────────────────────────
+import { useChatbot } from "./useChatbot";
+
+export default function Chatbot() {
   const {
     open,
     messages,
@@ -247,8 +288,9 @@ export default function Chatbot({ embedded = false }) {
     showScrollButton,
     handleScroll,
     scrollToBottom,
-  } = useChatbot({ embedded });
+  } = useChatbot();
 
+  // Add scroll event listener
   useEffect(() => {
     const bodyElement = bodyRef.current;
     if (bodyElement) {
@@ -263,7 +305,6 @@ export default function Chatbot({ embedded = false }) {
     <>
       <ChatWindow
         open={open}
-        embedded={embedded}
         messages={messages}
         input={input}
         bodyRef={bodyRef}
@@ -278,7 +319,7 @@ export default function Chatbot({ embedded = false }) {
         showScrollButton={showScrollButton}
         scrollToBottom={scrollToBottom}
       />
-      {!embedded && <ChatFAB open={open} onClick={toggleOpen} />}
+      <ChatFAB open={open} onClick={toggleOpen} />
     </>
   );
 }
