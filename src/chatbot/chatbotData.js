@@ -77,7 +77,7 @@ export const RESPONSES = {
     helpline: false,
   },
   military_voucher: {
-    text: `Military Voucher Booking Procedure:\n\n📋 Requirements:\n• Valid military discount voucher must be presented\n• Person carrying voucher must travel (non-transferable)\n• Booking must be made at reservation counter (not online)\n\n🎫 Booking Steps:\n1. Visit any reservation office\n2. Present military discount voucher\n3. Provide CNIC and travel details\n4. Pay remaining fare (if any) after discount\n\n⚠️ Important Notes:\n• Military vouchers cannot be used for online booking\n• Voucher must be valid and not expired\n• Carry original voucher during journey\n• For group bookings, each person needs separate voucher\n\nFor assistance with military bookings, contact our helpline at 117.`,
+    text: `Military Voucher Booking Procedure:\n\n📋 Requirements:\n• Valid military discount voucher must be presented\n• Person carrying voucher must travel (non-transferable)\n• Booking must be made at reservation counter (not online)\n\n🎫 Booking Steps:\n1. Visit the reservation office of the departure station (booking is only allowed from the station where your journey starts)\n2. Present military discount voucher\n3. Provide CNIC and travel details\n4. Pay remaining fare (if any) after discount\n\n⚠️ Important Notes:\n• Military vouchers can only be booked from the departure station reservation office. However, passenger can board the train from any upcoming station if he misses his train.\n• Military vouchers cannot be used for online booking\n• Voucher must be valid and not expired\n• Carry original voucher during journey\n• For group bookings, each person needs separate voucher\n\nFor assistance with military bookings, contact our helpline at 117.`,
     helpline: false,
   },
   paper_refund: {
@@ -94,10 +94,10 @@ export const RESPONSES = {
     text: `A Guard Chart is a printed list of all reserved passengers, produced before train departure.\n\n• Usually produced 2 hours before departure\n• At remote stations, it may be produced the previous night\n\nExample: Shalimar Express departs at 6:00 AM → Guard chart produced at 8:00 PM the night before. After this time, online cancellation is not possible.`,
   },
   half_fare: {
-    text: `Half fare applies to:\n\n👶 Children aged 3 to 10 years\n👴 Senior citizens aged 65 and above (in selected trains only)\n\nNote: Economy class does NOT have a senior citizen concession on all trains. Always verify at booking.`,
+    text: `Half fare applies to:\n\nChildren aged 3 to 10 years\nSenior citizens aged 65 and above (in selected trains only)\n\nNote: Economy class does NOT have a senior citizen concession on all trains. Always verify at booking.\nNote: Children under 3 years travel free without a ticket.`,
   },
   create_account: {
-    text: `To create a Pakistan Railways account:\n\n1. Provide your real CNIC number\n2. Enter your mobile number and email\n3. Verify via SMS and email link (both required)\n4. Verification link/SMS can be resent up to 3 times\n\n⚠️ After 3 failed attempts, your phone and email are permanently blocked for registration.`,
+    text: `To create a Pakistan Railways account:\n\n1. Go to https://www.pakrailways.gov.pk/register\n2. Provide your real CNIC number\n3. Enter your mobile number and email\n4. Verify via SMS and email link (both required)\n5. Verification link/SMS can be resent up to 3 times\n\n⚠️ After 3 failed attempts, your phone and email are permanently blocked for registration.`,
   },
   verify_account: {
     text: `If you did not receive the verification SMS or email:\n\n• You can request resend up to 3 times\n• Check your spam/junk folder for the email\n• Make sure your mobile number is active\n\n⚠️ After 3 failed attempts, the phone number and email are permanently blocked. Contact helpline at 117 for unblocking.`,
