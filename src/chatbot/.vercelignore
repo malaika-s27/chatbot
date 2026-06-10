@@ -1,0 +1,5 @@
+../../backend/
+ragIntegration.js
+*.pkl
+*.json
+node_modules/
