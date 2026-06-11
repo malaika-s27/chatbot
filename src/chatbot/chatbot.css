@@ -357,3 +357,33 @@
     right: 16px;
   }
 }
+.pr-chat-window {
+  position: static !important;
+  width: 100% !important;
+  height: auto !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.pr-chat-body {
+  background: transparent !important;
+  padding: 0 !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.pr-chat-window--hidden {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+.pr-chat-header,
+.pr-chat-footer,
+.pr-chat-fab {
+  display: none !important;
+}
