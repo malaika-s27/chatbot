@@ -303,23 +303,24 @@ export default function Chatbot() {
 
   return (
     <>
-      <ChatWindow
-        open={open}
-        messages={messages}
-        input={input}
-        bodyRef={bodyRef}
-        setInput={setInput}
-        onMenuClick={handleMenuClick}
-        onSubClick={handleSubClick}
-        onBack={handleBack}
-        onSend={handleSend}
-        onInputKey={handleInputKey}
-        onClose={() => toggleOpen()}
-        onShowMainMenu={showMainMenu}
-        showScrollButton={showScrollButton}
-        scrollToBottom={scrollToBottom}
-      />
-      <ChatFAB open={open} onClick={toggleOpen} />
-    </>
-  );
+     return (
+  <>
+    <ChatWindow
+      open={true}
+      messages={messages}
+      input={input}
+      bodyRef={bodyRef}
+      setInput={setInput}
+      onMenuClick={handleMenuClick}
+      onSubClick={handleSubClick}
+      onBack={handleBack}
+      onSend={handleSend}
+      onInputKey={handleInputKey}
+      onClose={() => {}}
+      onShowMainMenu={showMainMenu}
+      showScrollButton={showScrollButton}
+      scrollToBottom={scrollToBottom}
+    />
+  </>
+);
 }
