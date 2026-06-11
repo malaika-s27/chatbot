@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import {
   MAIN_MENU,
   SUBMENU,
@@ -60,11 +60,20 @@ function resolveKeyword(text) {
 //  CUSTOM HOOK
 // ─────────────────────────────────────────────
 export const useChatbot = () => {
-  const [open, setOpen] = useState(false);
-  const [started, setStarted] = useState(false);
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState([
+    {
+      id: "welcome",
+      type: "bot",
+      text: "Welcome to Railway Automated Help & Intelligence!\n\nI can help you with tickets, refunds, policies, and more.",
+    },
+    {
+      id: "main-menu",
+      type: "bot",
+      text: "What can I help you with today? Please choose a category:",
+      menu: true,
+    },
+  ]);
   const [input, setInput] = useState("");
-  const [isTyping, setIsTyping] = useState(false);
   const [showScrollButton, setShowScrollButton] = useState(false);
   const bodyRef = useRef(null);
   // const lastMessageCount = useRef(0);
@@ -125,22 +134,6 @@ export const useChatbot = () => {
   };
 
   // ── Open chat (first time greet) ───────────
-  const openChat = () => {
-    setOpen(true);
-    if (!started) {
-      setStarted(true);
-      setTimeout(() => {
-        addMsg({
-          type: "bot",
-          text: "Welcome to Railway Automated Help & Intelligence!\n\nI can help you with tickets, refunds, policies, and more.",
-        });
-        setTimeout(showMainMenu, 600);
-      }, 400);
-    }
-  };
-
-  const toggleOpen = () => (open ? setOpen(false) : openChat());
-
   // ── Disable menu/submenu on a message ─────
   const disableMenu = (list) =>
     list.map((m) => (m.menu ? { ...m, menu: false } : m));
@@ -587,13 +580,10 @@ export const useChatbot = () => {
 // }, [messages]);
 
   return {
-    open,
-    started,
     messages,
     input,
     bodyRef,
     setInput,
-    toggleOpen,
     handleMenuClick,
     handleSubClick,
     handleBack,
