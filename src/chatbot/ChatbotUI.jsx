@@ -180,28 +180,7 @@ export function ChatWindow({
           flexDirection: "column",
         }}
       >
-        {/* Header */}
-        <div className="pr-chat-header">
-          <div
-            className="pr-chat-header__avatar"
-          ></div>
-          <div className="pr-chat-header__info">
-            <h6>Pakistan Railways</h6>
-            <span>
-              <span className="pr-online-dot" />
-              RAHI 117
-            </span>
-          </div>
-          <button
-            className="pr-minimize-btn ms-auto"
-            onClick={onClose}
-            title="Minimize"
-            aria-label="Close chat"
-          >
-            −
-          </button>
-        </div>
-
+        
         {/* Messages */}
         <div className="pr-chat-body" ref={bodyRef}>
           {messages.map((msg, i) => (
@@ -216,26 +195,7 @@ export function ChatWindow({
           ))}
         </div>
 
-        {/* Input */}
-        <div className="pr-chat-footer">
-          <input
-            type="text"
-            placeholder="Type your question..."
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={onInputKey}
-            aria-label="Chat input"
-          />
-          <button
-            className="pr-send-btn"
-            onClick={onSend}
-            aria-label="Send message"
-          >
-            <svg viewBox="0 0 24 24">
-              <path d="M2 21l21-9L2 3v7l15 2-15 2z" />
-            </svg>
-          </button>
-        </div>
+     
         {showScrollButton && <ScrollToBottom onClick={scrollToBottom} />}
       </div>
     </div>
@@ -273,22 +233,20 @@ import { useChatbot } from "./useChatbot";
 
 export default function Chatbot() {
   const {
-    open,
-    messages,
-    input,
-    bodyRef,
-    setInput,
-    toggleOpen,
-    handleMenuClick,
-    handleSubClick,
-    handleBack,
-    handleSend,
-    handleInputKey,
-    showMainMenu,
-    showScrollButton,
-    handleScroll,
-    scrollToBottom,
-  } = useChatbot();
+  messages,
+  input,
+  bodyRef,
+  setInput,
+  handleMenuClick,
+  handleSubClick,
+  handleBack,
+  handleSend,
+  handleInputKey,
+  showMainMenu,
+  showScrollButton,
+  handleScroll,
+  scrollToBottom,
+} = useChatbot();
 
   // Add scroll event listener
   useEffect(() => {
